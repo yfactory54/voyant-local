@@ -1,0 +1,65 @@
+voyant — a lightweight local reimplementation of core Voyant Tools analyses.
+Copyright (C) 2026 voyant contributors
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see <https://www.gnu.org/licenses/>.
+
+Third-party material
+--------------------
+
+voyant/stopwords.py contains the English stoplist stop.en.txt from
+Trombone, used by Voyant Tools (voyant-tools.org):
+
+  Copyright (C) 2007-2012 Stéfan Sinclair & Geoffrey Rockwell
+  https://github.com/voyanttools/trombone
+  src/main/resources/org/voyanttools/trombone/stopwords/stop.en.txt
+
+Trombone is free software under the GNU General Public License,
+version 3 or later. That stoplist is included verbatim under the
+same license. Its header points at the TAPoRware Glasgow stoplist
+(http://taporware.mcmaster.ca/).
+
+The remaining analysis code was written from published statistical
+definitions of relative frequency, per-document z-score, tf-idf and
+Pearson correlation. It does not copy Trombone, Voyant or VoyantServer
+source. Those projects are licensed under the GNU General Public
+License version 3:
+
+  https://github.com/voyanttools/Voyant/blob/master/LICENSE.txt
+  https://github.com/voyanttools/VoyantServer/blob/master/license-GPL3.txt
+  https://github.com/voyanttools/trombone/blob/master/LICENSE.txt
+
+"Voyant" and "Voyant Tools" name the original project by Stéfan
+Sinclair and Geoffrey Rockwell. This repository is an independent
+reimplementation. It is not affiliated with, endorsed by, or a
+substitute for Voyant Tools.
+
+Bundled fonts
+-------------
+
+voyant/fonts/ contains unmodified WOFF2 files from Adobe's open-source
+families. Both are licensed under the SIL Open Font License 1.1, which
+is incompatible with the GPL, so the font files stay under the OFL and
+are not relicensed by LICENSE. The Reserved Font Name is "Source".
+Full license text: voyant/fonts/OFL.txt.
+
+  Source Serif 4, Copyright 2014-2023 Adobe
+  https://github.com/adobe-fonts/source-serif
+  files: source-serif-4-500.woff2, source-serif-4-600.woff2
+
+  Source Sans 3, Copyright 2010-2024 Adobe
+  https://github.com/adobe-fonts/source-sans
+  files: source-sans-3-400.woff2, source-sans-3-600.woff2
+
+Documents produced by the view command using these fonts are not
+restricted by the OFL.

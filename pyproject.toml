@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voyant-local"
+description = "Lightweight Voyant Tools analysis for local text files."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "GPL-3.0-or-later" }
+dependencies = []
+dynamic = ["version"]
+
+[project.scripts]
+voyant = "voyant.cli:main"
+
+[tool.setuptools]
+packages = ["voyant"]
+
+[tool.setuptools.dynamic]
+version = { attr = "voyant.__version__" }
+
+[tool.setuptools.package-data]
+voyant = ["fonts/*"]
